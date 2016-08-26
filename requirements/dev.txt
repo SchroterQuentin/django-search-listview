@@ -1,0 +1,8 @@
+-r common.txt
+coverage
+sphinx
+pylint
+pep8
+django-debug-toolbar
+django-extensions
+tox

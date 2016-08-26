@@ -1,0 +1,4 @@
+[run]
+source = django_search_model/
+omit = django_search_model/settings/*
+       django_search_model/wsgi.py
