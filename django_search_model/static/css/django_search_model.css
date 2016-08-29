@@ -1,4 +1,4 @@
-ul.pagination li a.active {
+ul.pagination li.active {
     background-color: dodgerblue;
     color: white;
     border: 1px solid dodgerblue;
