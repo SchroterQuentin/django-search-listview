@@ -5,7 +5,7 @@ from setuptools import setup
 from setuptools import find_packages
 
 
-with open('README.rst') as readme:
+with open('README.md') as readme:
     long_description = readme.read()
 
 
@@ -36,13 +36,13 @@ setup(
     dependency_links=dependency_links,
     long_description=long_description,
     description='',
-    author='di-dip-unistra',
-    author_email='di-dip@unistra.fr',
-    maintainer='di-dip-unistra',
-    maintainer_email='di-dip@unistra.fr',
-    url='',
-    download_url='',
+    author='Quentin Schroter',
+    author_email='qschroter@gmail.com',
+    maintainer='Quentin Schroter',
+    maintainer_email='qschroter@gmail.com',
+    url='https://github.com/SchroterQuentin/Django-SearchableListView',
+    download_url='https://github.com/SchroterQuentin/Django-SearchableListView',
     license='PSF',
-    keywords=['django', 'Université de Strasbourg'],
+    keywords=['django', 'listView', 'search'],
     include_package_data=True,
 )
