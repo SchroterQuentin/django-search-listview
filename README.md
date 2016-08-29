@@ -32,7 +32,7 @@ In the template
 - Where you want the pagination and the search box
 
         <div class="row">
-            {% include "search_and_page.html" %}
+            {% include "django_search_model/search_and_page.html" %}
         </div>
 
 - In the footer
