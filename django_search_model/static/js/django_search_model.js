@@ -7,25 +7,15 @@ function change_page(i)
 
 function toggle_search_box()
 {
-    if(window.jQuery)
-    {
-        $("#search_box").toggle('blind')
-    }
-    else
-    {
-        var search_box = document.getElementById("search_box")
-        if(search_box.style.display == "block")
-        {
-            search_box.style.display = "none"
-        }
-        else
-        {
-            search_box.style.display = "block"
-        }
-    }
+    $("#search_box").toggle('blind')
 }
 
 function start_search(){
+    if(!window.jQuery)
+    {
+        console.log("Please install jQuery")
+        return
+    }
     window.onresize = NoWrap
     save_form()
     NoWrap()

@@ -10,10 +10,13 @@ class ListDeviceSearchablePaginate(SearchableListView):
     model = Device
     template_name = "tests/list.html"
     paginate_by = 10
+    specifications = {
+        "model_device__brand__name": "__icontains"
+    }
     searchable_fields = ["inventory_number", "model_device", "model_device__brand__provider",
     "model_device__brand__name"]
 
-class ListDeviceReverseRelationFail(SearchableListView):
+class ListDeviceReverseRelationProvider(SearchableListView):
     model = Provider
     template_name = "tests/list_reverse.html"
     paginate_by = 2

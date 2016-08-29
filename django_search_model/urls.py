@@ -2,13 +2,9 @@ from django.conf.urls import patterns, include, url
 from django.conf import settings
 from django.contrib import admin
 
-from .views import home
-
 admin.autodiscover()
 
 urlpatterns = [
-    # Examples:
-    url(r'^$', home, name='home'),
     url(r'^list/', include('django_search_model.tests.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]
