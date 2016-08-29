@@ -1,7 +1,7 @@
 Django-SearchableListView
 =========================
 
-![Alt tag](https://travis-ci.org/SchroterQuentin/Django-SearchableListView.svg?branch=master)
+[![Build Status](https://travis-ci.org/SchroterQuentin/Django-SearchableListView.svg?branch=master)](https://travis-ci.org/SchroterQuentin/Django-SearchableListView)
 [![Coverage Status](https://coveralls.io/repos/github/SchroterQuentin/Django-SearchableListView/badge.svg)](https://coveralls.io/github/SchroterQuentin/Django-SearchableListView)
 
 ListView which can be searchable, paginate and which don't lose query parameter and page number
