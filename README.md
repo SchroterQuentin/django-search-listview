@@ -38,7 +38,8 @@ In the template
 - In the footer
 
         <!--Need jQuery-->
-        <script src="{% static 'js/django_search_model.js' %}">
+        <script src="{% static 'js/django_search_model.js' %}"></script>
+        <script>
             start_search()
         </script> 
 
