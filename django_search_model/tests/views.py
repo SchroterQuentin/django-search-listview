@@ -23,4 +23,4 @@ class ListDeviceReverseRelation(SearchableListView):
     model = Brand
     template_name = "tests/list_reverse_brand.html"
     paginate_by = 2
-    searchable_fields = ["modeldevice"]
+    searchable_fields = ["modeldevice", "modeldevice__device__inventory_number", "provider"]

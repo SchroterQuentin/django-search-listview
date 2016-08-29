@@ -20,6 +20,7 @@ class SearchableListView(ListView):
     searchable_fields = []
     specifications = {}
     nb_form_per_line = 4
+    class_css = "form-control"
 
     def get_q_object(self):
         """
@@ -35,7 +36,6 @@ class SearchableListView(ListView):
                     dic_tmp = {
                         attr: val
                     }
-                    print(dic_tmp, field)
                     mini_q |= Q(**dic_tmp)
             q_object &= mini_q
         return q_object
@@ -51,8 +51,11 @@ class SearchableListView(ListView):
         for key, value in magic_dico_form.items():
             form = Form()
             model = value["model"]
+            if not value["fields"]:
+                continue
             for field in value["fields"]:
                 formfield = get_formfield(model, field)
+                formfield.widget.attrs.update({'class': self.class_css})
                 form.fields.update({
                     field : formfield
                 })
@@ -67,7 +70,6 @@ class SearchableListView(ListView):
             form.initial = initial_tmp
             form.prefix = model.__name__
             forms.append(form)
-
         return sorted(forms, key=lambda form: form.prefix)
 
     def get_page_input(self, num_page):
@@ -183,6 +185,10 @@ def alias_field(model, field):
     return model.__name__ + "-" + field.split(LOOKUP_SEP)[-1]
 
 def associate_model(model, field):
+    """
+    Return the model associate to the ForeignKey or ManyToMany
+    relation
+    """
     class_field = model._meta.get_field(field)
     if hasattr(class_field, "field"):
         return class_field.field.related.related_model
@@ -190,6 +196,9 @@ def associate_model(model, field):
         return class_field.related_model
 
 def get_formfield(model, field):
+    """
+    Return the formfied associate to the field of the model
+    """
     class_field = model._meta.get_field(field)
 
     if hasattr(class_field, "field"):
@@ -197,6 +206,7 @@ def get_formfield(model, field):
     else:
         formfield = class_field.formfield()
     
+    # Otherwise the formfield contain the reverse relation
     if isinstance(formfield, ChoiceField):
         formfield.choices = class_field.get_choices()
     
