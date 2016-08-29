@@ -226,8 +226,9 @@ DJANGO_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
-    'django.contrib.admin'
+    'django.contrib.admin',
     # 'django.contrib.admindocs',
+    'django_search_model.tests',
 )
 
 THIRD_PARTY_APPS = ()

@@ -47,6 +47,7 @@ for logger in LOGGING['loggers']:
 INSTALLED_APPS += (
     'coverage',
     'debug_toolbar',
+    'django_extensions'
 )
 TEST_RUNNER = 'django_coverage.coverage_runner.CoverageRunner'
 

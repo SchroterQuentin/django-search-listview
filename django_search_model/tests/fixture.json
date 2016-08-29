@@ -1,0 +1,1358 @@
+[
+    {
+        "model": "tests.provider",
+        "pk": 1,
+        "fields": {
+            "name": "Provider0"
+        }
+    },
+    {
+        "model": "tests.provider",
+        "pk": 2,
+        "fields": {
+            "name": "Provider1"
+        }
+    },
+    {
+        "model": "tests.provider",
+        "pk": 3,
+        "fields": {
+            "name": "Provider2"
+        }
+    },
+    {
+        "model": "tests.provider",
+        "pk": 4,
+        "fields": {
+            "name": "provider3"
+        }
+    },
+    {
+        "model": "tests.provider",
+        "pk": 5,
+        "fields": {
+            "name": "ProviderApple"
+        }
+    },
+    {
+        "model": "tests.brand",
+        "pk": 1,
+        "fields": {
+            "provider": [
+                1,
+                2
+            ],
+            "name": "HTC"
+        }
+    },
+    {
+        "model": "tests.brand",
+        "pk": 2,
+        "fields": {
+            "provider": [
+                2,
+                3,
+                4
+            ],
+            "name": "Samsung"
+        }
+    },
+    {
+        "model": "tests.brand",
+        "pk": 3,
+        "fields": {
+            "provider": [
+                5
+            ],
+            "name": "Apple"
+        }
+    },
+    {
+        "model": "tests.modeldevice",
+        "pk": 1,
+        "fields": {
+            "brand": 1,
+            "name": "M9"
+        }
+    },
+    {
+        "model": "tests.modeldevice",
+        "pk": 2,
+        "fields": {
+            "brand": 1,
+            "name": "A9"
+        }
+    },
+    {
+        "model": "tests.modeldevice",
+        "pk": 3,
+        "fields": {
+            "brand": 3,
+            "name": "Iphone6s"
+        }
+    },
+    {
+        "model": "tests.modeldevice",
+        "pk": 4,
+        "fields": {
+            "brand": 3,
+            "name": "Iphone7"
+        }
+    },
+    {
+        "model": "tests.modeldevice",
+        "pk": 5,
+        "fields": {
+            "brand": 2,
+            "name": "Galaxy"
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 1,
+        "fields": {
+            "model_device": 1,
+            "inventory_number": 1
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 2,
+        "fields": {
+            "model_device": 1,
+            "inventory_number": 2
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 3,
+        "fields": {
+            "model_device": 1,
+            "inventory_number": 3
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 4,
+        "fields": {
+            "model_device": 1,
+            "inventory_number": 4
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 5,
+        "fields": {
+            "model_device": 1,
+            "inventory_number": 5
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 6,
+        "fields": {
+            "model_device": 2,
+            "inventory_number": 10
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 7,
+        "fields": {
+            "model_device": 2,
+            "inventory_number": 11
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 8,
+        "fields": {
+            "model_device": 2,
+            "inventory_number": 12
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9,
+        "fields": {
+            "model_device": 2,
+            "inventory_number": 13
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 10,
+        "fields": {
+            "model_device": 2,
+            "inventory_number": 14
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 11,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 20
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 12,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 21
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 13,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 22
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 14,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 23
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 15,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 24
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 16,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 25
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 17,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 26
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 18,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 27
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 19,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 28
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 20,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 29
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 21,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 30
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 22,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 31
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 23,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 32
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 24,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 100
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 25,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 101
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 26,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 102
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 27,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 103
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 28,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 104
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 29,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 105
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 30,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 106
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 31,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 107
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 32,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 108
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 33,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 109
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 34,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 110
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 35,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 111
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 36,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 112
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 37,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 113
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 38,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 114
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 39,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 115
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 41,
+        "fields": {
+            "model_device": 1,
+            "inventory_number": 211
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 42,
+        "fields": {
+            "model_device": 1,
+            "inventory_number": 212
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 43,
+        "fields": {
+            "model_device": 1,
+            "inventory_number": 213
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 44,
+        "fields": {
+            "model_device": 1,
+            "inventory_number": 214
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 45,
+        "fields": {
+            "model_device": 1,
+            "inventory_number": 215
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 46,
+        "fields": {
+            "model_device": 2,
+            "inventory_number": 2110
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 47,
+        "fields": {
+            "model_device": 2,
+            "inventory_number": 2111
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 48,
+        "fields": {
+            "model_device": 2,
+            "inventory_number": 2112
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 49,
+        "fields": {
+            "model_device": 2,
+            "inventory_number": 2113
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 410,
+        "fields": {
+            "model_device": 2,
+            "inventory_number": 2114
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 411,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 2120
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 412,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 2121
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 413,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 2122
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 414,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 2123
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 415,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 2124
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 416,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 2125
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 417,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 2126
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 418,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 2127
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 419,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 2128
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 420,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 2129
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 421,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 2130
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 422,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 2131
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 423,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 2132
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 424,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 21100
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 425,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 21101
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 426,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 21102
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 427,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 21103
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 428,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 21104
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 429,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 21105
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 430,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 21106
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 431,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 21107
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 432,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 21108
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 433,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 21109
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 434,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 21110
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 435,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 21111
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 436,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 21112
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 437,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 21113
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 438,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 21114
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 439,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 21115
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 91,
+        "fields": {
+            "model_device": 1,
+            "inventory_number": 901
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 92,
+        "fields": {
+            "model_device": 1,
+            "inventory_number": 902
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 93,
+        "fields": {
+            "model_device": 1,
+            "inventory_number": 903
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 94,
+        "fields": {
+            "model_device": 1,
+            "inventory_number": 904
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 95,
+        "fields": {
+            "model_device": 1,
+            "inventory_number": 905
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 96,
+        "fields": {
+            "model_device": 2,
+            "inventory_number": 9010
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 97,
+        "fields": {
+            "model_device": 2,
+            "inventory_number": 9011
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 98,
+        "fields": {
+            "model_device": 2,
+            "inventory_number": 9012
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 99,
+        "fields": {
+            "model_device": 2,
+            "inventory_number": 9013
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 910,
+        "fields": {
+            "model_device": 2,
+            "inventory_number": 9014
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 911,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 9020
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 912,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 9021
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 913,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 9022
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 914,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 9023
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 915,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 9024
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 916,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 9025
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 917,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 9026
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 918,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 9027
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 919,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 9028
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 920,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 9029
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 921,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 9030
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 922,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 9031
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 923,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 9032
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 924,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 90100
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 925,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 90101
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 926,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 90102
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 927,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 90103
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 928,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 90104
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 929,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 90105
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 930,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 90106
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 931,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 90107
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 932,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 90108
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 933,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 90109
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 934,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 90110
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 935,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 90111
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 936,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 90112
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 937,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 90113
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 938,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 90114
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 939,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 90115
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 941,
+        "fields": {
+            "model_device": 1,
+            "inventory_number": 90211
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 942,
+        "fields": {
+            "model_device": 1,
+            "inventory_number": 90212
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 943,
+        "fields": {
+            "model_device": 1,
+            "inventory_number": 90213
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 944,
+        "fields": {
+            "model_device": 1,
+            "inventory_number": 90214
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 945,
+        "fields": {
+            "model_device": 1,
+            "inventory_number": 90215
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 946,
+        "fields": {
+            "model_device": 2,
+            "inventory_number": 902110
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 947,
+        "fields": {
+            "model_device": 2,
+            "inventory_number": 902111
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 948,
+        "fields": {
+            "model_device": 2,
+            "inventory_number": 902112
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 949,
+        "fields": {
+            "model_device": 2,
+            "inventory_number": 902113
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9410,
+        "fields": {
+            "model_device": 2,
+            "inventory_number": 902114
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9411,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 902120
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9412,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 902121
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9413,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 902122
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9414,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 902123
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9415,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 902124
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9416,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 902125
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9417,
+        "fields": {
+            "model_device": 3,
+            "inventory_number": 902126
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9418,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 902127
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9419,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 902128
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9420,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 902129
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9421,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 902130
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9422,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 902131
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9423,
+        "fields": {
+            "model_device": 4,
+            "inventory_number": 902132
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9424,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 9021100
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9425,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 9021101
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9426,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 9021102
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9427,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 9021103
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9428,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 9021104
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9429,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 9021105
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9430,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 9021106
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9431,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 9021107
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9432,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 9021108
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9433,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 9021109
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9434,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 9021110
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9435,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 9021111
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9436,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 9021112
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9437,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 9021113
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9438,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 9021114
+        }
+    },
+    {
+        "model": "tests.device",
+        "pk": 9439,
+        "fields": {
+            "model_device": 5,
+            "inventory_number": 9021115
+        }
+    }
+]

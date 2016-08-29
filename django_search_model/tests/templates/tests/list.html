@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+<!--css file is load on base.html-->
+<!--js file is load on base.html-->
+<!--need jQuery-->
+
+{% block content %}
+
+<div class="row">
+    {% include "pagination.html" with button_search=True %}
+    {% include "search_box.html" %}
+</div>
+
+<div class="row">
+    <table class="table">
+        <thead>
+            <th>Inventory Number</th>
+            <th>Model</th>
+            <th>Brand</th>
+            <th>Provider</th>
+        </thead>
+        <tbody>
+            {% for object in object_list %}
+            <tr>
+                <td>
+                    {{ object.inventory_number }}
+                </td>
+                <td>
+                    {{ object.model_device.name }}
+                </td>
+                <td>
+                    {{ object.model_device.brand }}
+                </td>
+                <td>
+                    {% for provider in object.model_device.brand.provider.all %}
+                    {{ provider }},
+                    {% endfor %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
+
+{% block foot-javascript %}
+
+<script>
+    start_search()
+</script>
+
+{% endblock %}
+
+
