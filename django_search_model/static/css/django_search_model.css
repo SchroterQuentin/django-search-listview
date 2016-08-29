@@ -1,9 +1,6 @@
-ul.pagination li.active {
+ul.pagination .active {
     background-color: dodgerblue;
     color: white;
-    border: 1px solid dodgerblue;
 }
 
 ul.pagination li a:hover:not(.active) {background-color: #ddd;}
-
-div.text-center {text-align: center;}

@@ -51,8 +51,12 @@ function NoWrap()
 
     var seuil = 1
 
-    count_left = $("ul.pagination li:first").nextUntil(".active").filter(":visible").length
-    count_right = $("ul.pagination li.active").nextAll().filter(":visible").length
+    count_left = $("ul.pagination li:first").nextUntil(".active").length
+    if(count_left == last_page - 1)
+    {
+        count_left = 0
+    }
+    count_right = $("ul.pagination li.active").nextAll().length
 
     if(height > 40 || width > 0.9)
     {
