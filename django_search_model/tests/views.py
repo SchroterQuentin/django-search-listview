@@ -9,7 +9,7 @@ class ListDevicePaginate(SearchableListView):
 class ListDeviceSearchablePaginate(SearchableListView):
     model = Device
     template_name = "tests/list.html"
-    paginate_by = 10
+    paginate_by = 1
     specifications = {
         "model_device__brand__name": "__icontains"
     }

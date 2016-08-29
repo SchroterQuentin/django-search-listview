@@ -44,3 +44,5 @@ htmlcov/
 *.sublime-*
 .fab_tasks~
 *.db
+
+.coverage*

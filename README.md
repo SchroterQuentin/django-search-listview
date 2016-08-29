@@ -9,7 +9,7 @@ Installation
 This library need jQuery.
 To install it in your vitualenv on your django project
 
-    pip install ...
+    pip install django_search_model
 
 
 Only paginate ListView
