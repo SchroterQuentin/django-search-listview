@@ -37,7 +37,11 @@ function check_change(){
 
 function NoWrap()
 {
-    $("#paginator li").show()
+    $("#paginator li").each(function(){
+        var node = $(this).find("a")
+        $(node).text($(node).attr("rel"))
+        $(this).show()
+    })
     active_page = Math.floor($("#paginator li[class='active'] a").attr("rel"))
     last_page = Math.floor($("#paginator ul li").length)
     height = Math.floor($("#paginator ul").height())
