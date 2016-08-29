@@ -10,7 +10,7 @@ with open('README.md') as readme:
 
 setup(
     name='django_search_model',
-    version='2.2',
+    version='0.1',
     packages=find_packages(),
     long_description=long_description,
     description='Searchable and paginable ListView',

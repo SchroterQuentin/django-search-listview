@@ -15,23 +15,23 @@ class SearchTest(TestCase):
         response = self.client.get('/list/devices')
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response['Content-Type'], 'text/html; charset=utf-8')
-        self.assertContains(response, """<li><a class="active" href="#" onclick="change_page(1)" rel="1">1</a></li>""")
+        self.assertContains(response, """<li class="active"><a href="#" onclick="change_page(1)" rel="1">1</a></li>""")
 
         response = self.client.get('/list/devices?page=2')
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response['Content-Type'], 'text/html; charset=utf-8')
-        self.assertContains(response, """<li><a class="active" href="#" onclick="change_page(2)" rel="2">2</a></li>""")
+        self.assertContains(response, """<li class="active"><a href="#" onclick="change_page(2)" rel="2">2</a></li>""")
 
         response = self.client.get('/list/devices?page=16')
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response['Content-Type'], 'text/html; charset=utf-8')
-        self.assertContains(response, """<li><a class="active" href="#" onclick="change_page(16)" rel="16">16</a></li>""")
+        self.assertContains(response, """<li class="active"><a href="#" onclick="change_page(16)" rel="16">16</a></li>""")
 
     def test_search_page(self):
         response = self.client.get('/list/devices/search')
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response['Content-Type'], 'text/html; charset=utf-8')
-        self.assertContains(response, """<li><a class="active" href="#" onclick="change_page(1)" rel="1">1</a></li>""")
+        self.assertContains(response, """<li class="active"><a href="#" onclick="change_page(1)" rel="1">1</a></li>""")
         self.assertContains(response,"""<ul class="col-sm-12 collapse" id="search_box">""")
 
         response = self.client.get('/list/devices/search', data={
