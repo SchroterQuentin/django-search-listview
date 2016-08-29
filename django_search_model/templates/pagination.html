@@ -9,11 +9,13 @@
             {% endif %}
             {% endfor %}
         </ul>
-        {% if search_size and button_search %}
+        {% if search_size and not disalbe_button_search %}
         <div class="inline-form pull-right pagination">
             <button class="btn btn-default" onclick="toggle_search_box()"><i class="glyphicon glyphicon-search"></i></button>
         </div>
         {% endif %}
     </div>
+    {# hidden input to keep the page number #}
+    {{ search_page }}
 </div>
 
