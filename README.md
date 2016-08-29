@@ -57,4 +57,4 @@ Put the parameter for the query in **searchable_fields** which will be use to fi
 
 Now you have a beautifull box with all the fields you need.
 
-![alt tag](https://github.com/SchroterQuentin/Django-SearchableListView/tree/master/docs/search_box.png)
+![Alt tag](/docs/search_box.png?raw=true "Search box")
