@@ -2,6 +2,7 @@ Django-SearchableListView
 =========================
 
 ![Alt tag](https://travis-ci.org/SchroterQuentin/Django-SearchableListView.svg?branch=master)
+
 ListView which can be searchable, paginate and which don't lose query parameter and page number
 
 Installation
