@@ -1,4 +1,4 @@
-language: python
+language: py
 python:
   - "3.4"
   - "pypy"
