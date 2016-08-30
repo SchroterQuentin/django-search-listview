@@ -9,7 +9,7 @@ with open('README.md') as readme:
     long_description = readme.read()
 
 setup(
-    name='django_search_model',
+    name='django-search-listview',
     version='0.1',
     packages=find_packages(),
     long_description=long_description,

@@ -1,4 +1,4 @@
 include README.md
 include requirements.txt
-recursive-include django_search_model/static *
-recursive-include django_search_model/templates *
+recursive-include search_listview/static *
+recursive-include search_listview/templates *
