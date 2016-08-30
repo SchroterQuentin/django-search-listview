@@ -51,7 +51,7 @@ In the template
 
 ```html
 <div class="row">
-    {% include "django_search_model/search_and_page.html" %}
+    {% include "search_listview/search_and_page.html" %}
 </div>
 ```
 
