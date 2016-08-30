@@ -9,7 +9,7 @@ ListView which can be searchable, paginate and which don't lose query parameter 
 Installation
 ------------
 
-This library need jQuery.
+This library need jQuery ( and Bootstrap for the frond-end ) 
 To install it in your vitualenv on your django project
 
     pip install django_search_model
@@ -40,10 +40,6 @@ Put the parameter for the query in **searchable_fields** which will be use to fi
 
 In the template
 ---------------
-
-- In the header
-
-        <link rel="stylesheet" href="{% static 'css/django_search_model.css' %}" >
 
 - Where you want the pagination and the search box
 
