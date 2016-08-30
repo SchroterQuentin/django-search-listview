@@ -6,32 +6,38 @@
 {% block content %}
 
 <div class="row">
-    {% include "django_search_model/search_and_page.html" %}
+    {% include "search_listview/search_and_page.html" %}
 </div>
 
 <div class="row">
     <table class="table">
         <thead>
-            <th>Inventory Number</th>
-            <th>Model</th>
             <th>Brand</th>
+            <th>Model</th>
+            <th>Inventory Number</th>
             <th>Provider</th>
         </thead>
         <tbody>
             {% for object in object_list %}
             <tr>
                 <td>
-                    {{ object.inventory_number }}
+                    {{ object.name }}
                 </td>
                 <td>
-                    {{ object.model_device.name }}
+                    {% for model in object.modeldevice_set.all %}
+                        {{ model }},
+                    {% endfor %}
                 </td>
                 <td>
-                    {{ object.model_device.brand }}
+                    {% for model in object.modeldevice_set.all %}
+                        {% for device in model.device_set.all %}
+                            {{ device }},
+                        {% endfor %}
+                    {% endfor %}
                 </td>
                 <td>
-                    {% for provider in object.model_device.brand.provider.all %}
-                    {{ provider }},
+                    {% for provider in object.provider.all %}
+                    {{ provider.name }},
                     {% endfor %}
                 </td>
             </tr>

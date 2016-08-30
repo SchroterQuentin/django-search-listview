@@ -5,7 +5,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = [
-    url(r'^list/', include('django_search_model.tests.urls')),
+    url(r'^list/', include('search_listview.tests.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]
 

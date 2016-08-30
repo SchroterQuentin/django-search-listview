@@ -1,4 +1,4 @@
-from django_search_model.list import SearchableListView
+from search_listview.list import SearchableListView
 from .models import Device, Provider, Brand
 
 class ListDevicePaginate(SearchableListView):

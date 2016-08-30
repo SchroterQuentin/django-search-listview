@@ -1,7 +1,7 @@
 [run]
-source = django_search_model/
-omit = django_search_model/settings/*
-       django_search_model/wsgi.py
+source = search_listview/
+omit = search_listview/settings/*
+       search_listview/wsgi.py
        **/__*
        **/tests.py
        **/migrations*

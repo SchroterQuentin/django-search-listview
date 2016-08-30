@@ -228,13 +228,13 @@ DJANGO_APPS = (
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # 'django.contrib.admindocs',
-    'django_search_model.tests',
+    'search_listview.tests',
 )
 
 THIRD_PARTY_APPS = ()
 
 LOCAL_APPS = (
-    'django_search_model',
+    'search_listview',
 )
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS

@@ -1,6 +1,0 @@
-ul.pagination .active {
-    background-color: dodgerblue;
-    color: white;
-}
-
-ul.pagination li a:hover:not(.active) {background-color: #ddd;}
