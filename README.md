@@ -13,7 +13,7 @@ This library need jQuery ( and Bootstrap for the frond-end )
 To install it in your vitualenv on your django project
 
 ```{r, engine='bash', count_lines}
-pip install django_search_model
+pip install django-search-listview
 ```
 
 
