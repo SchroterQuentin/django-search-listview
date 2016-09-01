@@ -21,6 +21,8 @@ Only paginate ListView
 ----------------------
 
 ```python
+from search_listview.list import SearchableListView
+
 class ListDevicePaginate(SearchableListView):
     model = Device
     template_name = "tests/list.html"
@@ -31,6 +33,8 @@ Paginate + Searchable ListView
 ------------------------------
 
 ```python
+from search_listview.list import SearchableListView
+
 class ListDeviceSearchablePaginate(SearchableListView):
     model = Device
     template_name = "tests/list.html"
