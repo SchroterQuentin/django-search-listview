@@ -87,7 +87,10 @@ class SearchableListView(ListView):
 
         forms = self.get_search_form()
 
-        page_number_form = self.get_page_input(context["page_obj"].number)
+        if context["page_obj"] is not None:
+            page_number_form = self.get_page_input(context["page_obj"].number)
+        else:
+            page_number_form = None
 
         context.update({
             "search_box_form": forms,
