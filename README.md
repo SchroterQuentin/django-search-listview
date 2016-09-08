@@ -18,6 +18,13 @@ To install it in your vitualenv on your django project
 pip install django-search-listview
 ```
 
+```python
+INSTALLED_APPS = [
+    ...
+    'search_listview',
+]
+```
+
 
 Only paginate ListView
 ----------------------
