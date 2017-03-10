@@ -4,7 +4,6 @@ Django-SearchableListView
 [![Build Status](https://travis-ci.org/SchroterQuentin/django-search-listview.svg?branch=master)](https://travis-ci.org/SchroterQuentin/django-search-listview)
 [![Coverage Status](https://coveralls.io/repos/github/SchroterQuentin/Django-SearchableListView/badge.svg)](https://coveralls.io/github/SchroterQuentin/Django-SearchableListView)
 [![Code Health](https://landscape.io/github/SchroterQuentin/django-search-listview/master/landscape.svg?style=flat)](https://landscape.io/github/SchroterQuentin/django-search-listview/master)
-[![Download Month](https://img.shields.io/pypi/dm/django-search-listview.svg)](https://pypi.python.org/pypi/django-search-listview)
 
 ListView which can be searchable, paginate and which don't lose query parameter and page number
 
@@ -72,7 +71,7 @@ In the template
 
 ```html
 <!--Need jQuery-->
-<script src="{% static 'js/django_search_model.js' %}"></script>
+<script src="{% static 'search_listview/js/search_listview.js' %}"></script>
 <script>
     start_search()
 </script> 

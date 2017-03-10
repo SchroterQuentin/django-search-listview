@@ -1,18 +1,19 @@
 # -*- coding: utf-8 -*-
-
-
 import os
 from setuptools import setup
-from setuptools import find_packages
-
 
 with open('README.md') as readme:
     long_description = readme.read()
 
 setup(
     name='django-search-listview',
-    version='0.1.1',
-    packages=find_packages(),
+    version='0.2.2',
+    packages = ["search_listview"],
+    package_dir={'':'.'},
+    include_package_data=True,
+    package_data={
+        "" : ["templates/search_listview/*.html", "static/search_listview/js/*.js"],
+    },
     long_description=long_description,
     description='Searchable and paginable ListView',
     author='Quentin Schroter',
@@ -23,5 +24,5 @@ setup(
     download_url='https://github.com/SchroterQuentin/django-search-listview/tarball/0.1',
     license='PSF',
     keywords=['django', 'listView', 'search'],
-    include_package_data=True,
+    
 )

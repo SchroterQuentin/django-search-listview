@@ -23,11 +23,11 @@ DATABASES['default']['NAME'] = environ.get('DEFAULT_DB_NAME', 'django_search_mod
 # Log configuration #
 #####################
 
-LOGGING['handlers']['file']['filename'] = environ.get('LOG_DIR',
-        normpath(join('/tmp', 'test_%s.log' % SITE_NAME)))
-LOGGING['handlers']['file']['level'] = 'DEBUG'
+# LOGGING['handlers']['file']['filename'] = environ.get('LOG_DIR',
+#         normpath(join('/tmp', 'test_%s.log' % SITE_NAME)))
+# LOGGING['handlers']['file']['level'] = 'DEBUG'
 
-for logger in LOGGING['loggers']:
-    LOGGING['loggers'][logger]['level'] = 'DEBUG'
+# for logger in LOGGING['loggers']:
+#     LOGGING['loggers'][logger]['level'] = 'DEBUG'
 
 TEST_RUNNER = 'django.test.runner.DiscoverRunner'

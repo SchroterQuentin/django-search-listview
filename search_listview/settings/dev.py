@@ -32,12 +32,12 @@ DATABASES['default']['NAME'] = 'django_search_model.db'
 # Log configuration #
 #####################
 
-LOGGING['handlers']['file']['filename'] = environ.get('LOG_DIR',
-        normpath(join('/tmp', '%s.log' % SITE_NAME)))
-LOGGING['handlers']['file']['level'] = 'DEBUG'
+# LOGGING['handlers']['file']['filename'] = environ.get('LOG_DIR',
+#         normpath(join('/tmp', '%s.log' % SITE_NAME)))
+# LOGGING['handlers']['file']['level'] = 'DEBUG'
 
-for logger in LOGGING['loggers']:
-    LOGGING['loggers'][logger]['level'] = 'DEBUG'
+# for logger in LOGGING['loggers']:
+#     LOGGING['loggers'][logger]['level'] = 'DEBUG'
 
 
 ###########################

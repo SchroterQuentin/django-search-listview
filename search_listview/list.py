@@ -20,7 +20,8 @@ class SearchableListView(ListView):
     searchable_fields = []
     specifications = {}
     nb_form_per_line = 4
-    class_css = "form-control"
+    css_class = "form-control"
+    disable_search_button = False
 
     def get_q_object(self):
         """
@@ -55,7 +56,7 @@ class SearchableListView(ListView):
                 continue
             for field in value["fields"]:
                 formfield = get_formfield(model, field)
-                formfield.widget.attrs.update({'class': self.class_css})
+                formfield.widget.attrs.update({'class': self.css_class})
                 form.fields.update({
                     field : formfield
                 })
@@ -99,6 +100,7 @@ class SearchableListView(ListView):
                 floor(12/self.nb_form_per_line)
                 ) if len(forms) else 0,
             "search_page": page_number_form,
+            "disable_search_button": self.disable_search_button
         })
         return context
 

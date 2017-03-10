@@ -46,3 +46,6 @@ htmlcov/
 *.db
 
 .coverage*
+
+env*
+.vscode*

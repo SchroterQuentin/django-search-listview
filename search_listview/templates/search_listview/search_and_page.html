@@ -1,4 +1,6 @@
 <form action="#" method="GET" id="form_page" onsubmit="return check_change()">
-    {% include "search_listview/pagination.html" %}
+    {%if paginator %}
+        {% include "search_listview/pagination.html" %}
+    {% endif %}
     {% include "search_listview/search_box.html" %}
 </form>

@@ -23,10 +23,10 @@ DATABASES['default']['NAME'] = normpath(join(dirname(dirname(SITE_ROOT)), 'share
 # Log configuration #
 #####################
 
-LOGGING['handlers']['file']['filename'] = '{{ remote_current_path }}/log/app.log'
+# LOGGING['handlers']['file']['filename'] = '{{ remote_current_path }}/log/app.log'
 
-for logger in LOGGING['loggers']:
-    LOGGING['loggers'][logger]['level'] = 'DEBUG'
+# for logger in LOGGING['loggers']:
+#     LOGGING['loggers'][logger]['level'] = 'DEBUG'
 
 
 ############

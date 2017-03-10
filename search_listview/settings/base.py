@@ -250,53 +250,53 @@ SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
 # Log configuration #
 #####################
 
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'formatters': {
-        'default': {
-            'format': '%(levelname)s %(asctime)s %(name)s:%(lineno)s %(message)s'
-         }
-    },
-    'filters': {
-        'require_debug_false': {
-            '()': 'django.utils.log.RequireDebugFalse'
-        }
-    },
-    'handlers': {
-        'null': {
-            'level': 'DEBUG',
-            'class': 'django.utils.log.NullHandler'
-        },
-        'mail_admins': {
-            'level': 'ERROR',
-            'filters': ['require_debug_false'],
-            'class': 'django.utils.log.AdminEmailHandler'
-        },
-        'file': {
-            'level': 'INFO',
-            'class': 'logging.handlers.RotatingFileHandler',
-            'filename': '',
-            'maxBytes': 209715200,
-            'backupCount': 3,
-            'formatter': 'default'
-        }
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['null'],
-            'propagate': True,
-            'level': 'INFO'
-        },
-        'django.request': {
-            'handlers': ['mail_admins', 'file'],
-            'level': 'ERROR',
-            'propagate': True,
-        },
-        'django_search_model': {
-            'handlers': ['mail_admins', 'file'],
-            'level': 'ERROR',
-            'propagate': True
-        }
-    }
-}
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'formatters': {
+#         'default': {
+#             'format': '%(levelname)s %(asctime)s %(name)s:%(lineno)s %(message)s'
+#          }
+#     },
+#     'filters': {
+#         'require_debug_false': {
+#             '()': 'django.utils.log.RequireDebugFalse'
+#         }
+#     },
+#     'handlers': {
+#         'null': {
+#             'level': 'DEBUG',
+#             'class': 'django.utils.log.NullHandler'
+#         },
+#         'mail_admins': {
+#             'level': 'ERROR',
+#             'filters': ['require_debug_false'],
+#             'class': 'django.utils.log.AdminEmailHandler'
+#         },
+#         'file': {
+#             'level': 'INFO',
+#             'class': 'logging.handlers.RotatingFileHandler',
+#             'filename': '',
+#             'maxBytes': 209715200,
+#             'backupCount': 3,
+#             'formatter': 'default'
+#         }
+#     },
+#     'loggers': {
+#         'django': {
+#             'handlers': ['null'],
+#             'propagate': True,
+#             'level': 'INFO'
+#         },
+#         'django.request': {
+#             'handlers': ['mail_admins', 'file'],
+#             'level': 'ERROR',
+#             'propagate': True,
+#         },
+#         'django_search_model': {
+#             'handlers': ['mail_admins', 'file'],
+#             'level': 'ERROR',
+#             'propagate': True
+#         }
+#     }
+# }
