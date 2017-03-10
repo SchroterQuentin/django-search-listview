@@ -17,8 +17,8 @@ function start_search(){
         return
     }
     save_form()
-    NoWrap()
-    window.onresize = NoWrap
+    // NoWrap()
+    // window.onresize = NoWrap
 }
 
 var form_page_tmp
