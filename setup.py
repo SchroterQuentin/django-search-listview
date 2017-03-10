@@ -7,7 +7,7 @@ with open('README.md') as readme:
 
 setup(
     name='django-search-listview',
-    version='0.2.0',
+    version='0.2.1',
     packages = ["search_listview"],
     package_dir={'':'.'},
     include_package_data=True,
