@@ -1,4 +1,4 @@
 include README.md
 include requirements.txt
 recursive-include search_listview/static *
-recursive-include search_listview/templates *
+recursive-include search_listview/templates/search_listview *.html
