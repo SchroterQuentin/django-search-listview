@@ -1,4 +1,4 @@
-
+{% load i18n %}
 <ul class="col-sm-12 collapse" id="search_box">
     {% if search_size %}
     <div class="row">
@@ -8,6 +8,6 @@
     </div>
     {% endfor %}
     </div>
-    <button type="submit" class="btn btn-default btn-block">Rechercher</button>
+    <button type="submit" class="btn btn-default btn-block">{% trans "Search" %}</button>
     {% endif %}
 </ul>
